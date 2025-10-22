@@ -9,7 +9,6 @@ query selectProblem($titleSlug: String!) {
         content
         translatedTitle
         translatedContent
-        isPaidOnly
         difficulty
         likes
         dislikes
@@ -37,9 +36,6 @@ query selectProblem($titleSlug: String!) {
         solution {
             id
             canSeeDetail
-            paidOnly
-            hasVideoSolution
-            paidOnlyVideo
         }
         status
         sampleTestCase
@@ -49,17 +45,8 @@ query selectProblem($titleSlug: String!) {
         mysqlSchemas
         enableRunCode
         enableTestMode
-        enableDebugger
         envInfo
         libraryUrl
-        adminUrl
-        challengeQuestion {
-            id
-            date
-            incompleteChallengeCount
-            streakCount
-            type
-        }
         note
     }
 }`;

@@ -30,10 +30,11 @@ export const formatDailyData = (data: DailyProblemData) => ({
 });
 
 export const formatQuestionData = (data: SelectProblemData) => ({
-  link: `https://leetcode.com/problems/` + data.question.titleSlug,
+  link: `https://leetcode.cn/problems/` + data.question.titleSlug,
   questionId: data.question.questionId,
   questionFrontendId: data.question.questionFrontendId,
   questionTitle: data.question.title,
+  questionTranslatedTitle: data.question.translatedTitle,
   titleSlug: data.question.titleSlug,
   difficulty: data.question.difficulty,
   isPaidOnly: data.question.isPaidOnly,

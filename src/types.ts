@@ -104,6 +104,7 @@ interface Submission {
 
 interface Question {
   content: string;
+  translatedContent: string;
   companyTagStats: string[];
   difficulty: Difficulty;
   dislikes: number;
@@ -116,8 +117,10 @@ interface Question {
   solution: string;
   similarQuestions: {}[];
   title: string;
+  translatedTitle: string;
   titleSlug: string;
   topicTags: string[];
+
 }
 
 export interface DailyProblemData {

@@ -8,7 +8,7 @@ const fetchSingleProblem = async (
   titleSlug: string | null
 ) => {
   try {
-    const response = await fetch('https://leetcode.com/graphql', {
+    const response = await fetch('https://leetcode.cn/graphql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
